@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background: solid(148, 171, 219);
+}
+
+button {
+    padding: 20px 40px;
+    font-size: 44px;
+    position: relative;
+    background: transparent;
+    color: #ffa500;
+    text-transform: uppercase;
+    border: 3px solid #ffa500;
+    cursor: pointer;
+    transition: all 0.7s;
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+button:hover {
+    color: rgba(212, 73, 205, 0.948);
+}
+
+span {
+    transition: all 0.7s;
+    z-index: -1;
+
+}
+
+button .left {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background: blue;
+}
+
+button:hover .left {
+    top: 0;
+    right: 0;
+}
+
+button .top {
+    content: "";
+    position: absolute;
+    left: 25%;
+    top: -100%;
+    height: 100%;
+    width: 25%;
+    background: red;
+
+}
+
+button:hover .top {
+    top: 0;
+    left: 50%;
+}
+
+button .bottom {
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    top: 100%;
+    width: 25%;
+    background: yellow;
+
+}
+
+button:hover .bottom {
+    top: 0;
+    left: 25%;
+}
+
+button .right {
+
+    content: "";
+    position: absolute;
+    left: 100%;
+    height: 100%;
+    top: 0;
+    width: 25%;
+    background: pink;
+
+}
+
+button:hover .right {
+    top: 0;
+    left: 0;
+}
+i {
+    opacity: 0;
+    font-size: 28px;
+    color: #1f1e1e;
+    will-change:contents;
+    transform: scale(.1);
+
+}
+.btn_warp{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    width: 240px;
+    height: 72px;
+    background-color: #EEEEED;
+    border-radius: 80px;
+    padding: 0 18px;
+    will-change: contents;
+    transition: all .2s ease-in-out;
+
+}
+.btn_warp:hover{
+    transform: scale(1.1);
+
+}
